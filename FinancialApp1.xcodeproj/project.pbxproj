@@ -14,6 +14,7 @@
 		AD91C18D2CBFF86A009524CC /* FinancialApp1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C18C2CBFF86A009524CC /* FinancialApp1Tests.swift */; };
 		AD91C1972CBFF86A009524CC /* FinancialApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C1962CBFF86A009524CC /* FinancialApp1UITests.swift */; };
 		AD91C1992CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C1982CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift */; };
+		AD91C1AA2CBFFD90009524CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD91C1A92CBFFD90009524CC /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +45,7 @@
 		AD91C1922CBFF86A009524CC /* FinancialApp1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FinancialApp1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD91C1962CBFF86A009524CC /* FinancialApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialApp1UITests.swift; sourceTree = "<group>"; };
 		AD91C1982CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialApp1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD91C1A92CBFFD90009524CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,10 +96,11 @@
 		AD91C17A2CBFF868009524CC /* FinancialApp1 */ = {
 			isa = PBXGroup;
 			children = (
+				AD91C1A52CBFFCF1009524CC /* MainNavigation */,
 				AD91C17B2CBFF868009524CC /* FinancialApp1App.swift */,
-				AD91C17D2CBFF868009524CC /* ContentView.swift */,
 				AD91C17F2CBFF86A009524CC /* Assets.xcassets */,
 				AD91C1812CBFF86A009524CC /* Preview Content */,
+				AD91C1A92CBFFD90009524CC /* Launch Screen.storyboard */,
 			);
 			path = FinancialApp1;
 			sourceTree = "<group>";
@@ -125,6 +128,38 @@
 				AD91C1982CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift */,
 			);
 			path = FinancialApp1UITests;
+			sourceTree = "<group>";
+		};
+		AD91C1A52CBFFCF1009524CC /* MainNavigation */ = {
+			isa = PBXGroup;
+			children = (
+				AD91C1A82CBFFD32009524CC /* Model */,
+				AD91C1A72CBFFD15009524CC /* ViewModels */,
+				AD91C1A62CBFFD08009524CC /* Views */,
+			);
+			path = MainNavigation;
+			sourceTree = "<group>";
+		};
+		AD91C1A62CBFFD08009524CC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				AD91C17D2CBFF868009524CC /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		AD91C1A72CBFFD15009524CC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		AD91C1A82CBFFD32009524CC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +266,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AD91C1AA2CBFFD90009524CC /* Launch Screen.storyboard in Resources */,
 				AD91C1832CBFF86A009524CC /* Preview Assets.xcassets in Resources */,
 				AD91C1802CBFF86A009524CC /* Assets.xcassets in Resources */,
 			);
@@ -424,11 +460,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialApp1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceManager;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -436,9 +475,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.FinancialApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -452,11 +495,14 @@
 				DEVELOPMENT_ASSET_PATHS = "\"FinancialApp1/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = FinanceManager;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -464,9 +510,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.ADA.FinancialApp1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
