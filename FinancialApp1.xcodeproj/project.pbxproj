@@ -28,6 +28,8 @@
 		AD91C1972CBFF86A009524CC /* FinancialApp1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C1962CBFF86A009524CC /* FinancialApp1UITests.swift */; };
 		AD91C1992CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD91C1982CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift */; };
 		AD91C1AA2CBFFD90009524CC /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD91C1A92CBFFD90009524CC /* Launch Screen.storyboard */; };
+		ADD1E0FE2CC2BF0B007C44C1 /* ContentViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E0FD2CC2BF0B007C44C1 /* ContentViewViewModel.swift */; };
+		ADD1E1002CC2C2B8007C44C1 /* HomepageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E0FF2CC2C2B8007C44C1 /* HomepageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,6 +71,8 @@
 		AD91C1962CBFF86A009524CC /* FinancialApp1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialApp1UITests.swift; sourceTree = "<group>"; };
 		AD91C1982CBFF86A009524CC /* FinancialApp1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancialApp1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		AD91C1A92CBFFD90009524CC /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		ADD1E0FD2CC2BF0B007C44C1 /* ContentViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewViewModel.swift; sourceTree = "<group>"; };
+		ADD1E0FF2CC2C2B8007C44C1 /* HomepageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomepageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				AD91C17D2CBFF868009524CC /* ContentView.swift */,
+				ADD1E0FF2CC2C2B8007C44C1 /* HomepageView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -219,6 +224,7 @@
 		AD91C1A72CBFFD15009524CC /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				ADD1E0FD2CC2BF0B007C44C1 /* ContentViewViewModel.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -373,6 +379,7 @@
 				AD8B457E2CC11C7600B69461 /* LoginView.swift in Sources */,
 				AD8B45842CC11CA600B69461 /* LoginViewViewModel.swift in Sources */,
 				AD8B45802CC11C8100B69461 /* RegisterView.swift in Sources */,
+				ADD1E1002CC2C2B8007C44C1 /* HomepageView.swift in Sources */,
 				AD8B458D2CC1252600B69461 /* extension.swift in Sources */,
 				AD8B45822CC11C9B00B69461 /* ProfileView.swift in Sources */,
 				AD91C17E2CBFF868009524CC /* ContentView.swift in Sources */,
@@ -381,6 +388,7 @@
 				AD8B45882CC11CBD00B69461 /* ProfileViewViewModel.swift in Sources */,
 				AD91C17C2CBFF868009524CC /* FinancialApp1App.swift in Sources */,
 				AD8B45862CC11CB200B69461 /* RegisterViewViewModel.swift in Sources */,
+				ADD1E0FE2CC2BF0B007C44C1 /* ContentViewViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
